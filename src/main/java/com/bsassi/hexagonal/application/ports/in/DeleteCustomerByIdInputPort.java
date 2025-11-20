@@ -1,2 +1,6 @@
-package com.bsassi.hexagonal.application.ports.in;public interface DeleteCustomerByIdInputPort {
+package com.bsassi.hexagonal.application.ports.in;
+
+public interface DeleteCustomerByIdInputPort {
+
+    void delete(String id);
 }
