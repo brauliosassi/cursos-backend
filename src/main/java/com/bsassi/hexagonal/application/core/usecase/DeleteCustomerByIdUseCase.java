@@ -1,17 +1,16 @@
 package com.bsassi.hexagonal.application.core.usecase;
 
-import com.bsassi.hexagonal.application.core.domain.Customer;
 import com.bsassi.hexagonal.application.ports.in.DeleteCustomerByIdInputPort;
 import com.bsassi.hexagonal.application.ports.in.FindCustomerByIdInputPort;
 import com.bsassi.hexagonal.application.ports.out.DeleteCustomerByIdOutputPort;
 
-public class DeleteCustomerByUseCase implements DeleteCustomerByIdInputPort {
+public class DeleteCustomerByIdUseCase implements DeleteCustomerByIdInputPort {
 
     private final FindCustomerByIdInputPort findCustomerByIdInputPort;
 
     private final DeleteCustomerByIdOutputPort deleteCustomerByIdOutputPort;
 
-    public DeleteCustomerByUseCase(
+    public DeleteCustomerByIdUseCase(
             FindCustomerByIdInputPort findCustomerByIdInputPort,
             DeleteCustomerByIdOutputPort deleteCustomerByIdOutputPort)
     {
