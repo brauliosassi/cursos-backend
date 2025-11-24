@@ -1,0 +1,45 @@
+@startuml
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam packageTitleFontColor #333333
+skinparam packageTitleFontSize 14
+skinparam packageBorderColor #999999
+skinparam packageBackgroundColor #EFEFEF
+
+package "Adapters IN" {
+  [Controller] as controller
+  [Consumer] as consumer
+}
+
+package "Adapters OUT" {
+  [Client] as client
+  [Repository] as repository
+}
+
+package "Application" {
+  [UseCase] as usecase
+  [InputPort] as inputPort
+  [OutputPort] as outputPort
+}
+
+package "Domain" {
+  [Entity] as entity
+}
+
+package "Shared" {
+  [Mapper] as mapper
+}
+
+entity --> usecase : "Domain logic"
+usecase --> inputPort : "Inbound contract"
+usecase --> outputPort : "Outbound contract"
+inputPort --> controller : "HTTP calls"
+inputPort --> consumer : "Message handling"
+outputPort --> client : "External API"
+outputPort --> repository : "Persistence"
+mapper --> controller
+mapper --> consumer
+mapper --> client
+mapper --> repository
+@enduml
