@@ -1,7 +1,6 @@
 package com.bsassi.hexagonal.application.core.domain;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 public class Customer {
     public Customer() {
@@ -54,11 +53,11 @@ public class Customer {
         this.cpf = cpf;
     }
 
-    public Boolean getValidCpf() {
+    public Boolean getIsValidCpf() {
         return isValidCpf;
     }
 
-    public void setValidCpf(Boolean validCpf) {
+    public void setIsValidCpf(Boolean validCpf) {
         isValidCpf = validCpf;
     }
 }
