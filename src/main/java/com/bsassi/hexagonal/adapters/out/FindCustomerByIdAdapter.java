@@ -1,7 +1,6 @@
 package com.bsassi.hexagonal.adapters.out;
 
 import com.bsassi.hexagonal.adapters.out.repository.CustomerRepository;
-import com.bsassi.hexagonal.adapters.out.repository.entity.CustomerEntity;
 import com.bsassi.hexagonal.adapters.out.repository.mapper.CustomerEntityMapper;
 import com.bsassi.hexagonal.application.core.domain.Customer;
 import com.bsassi.hexagonal.application.ports.out.FindCustomerByIdOutputPort;

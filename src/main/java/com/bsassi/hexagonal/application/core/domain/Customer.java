@@ -1,7 +1,5 @@
 package com.bsassi.hexagonal.application.core.domain;
 
-import lombok.*;
-
 public class Customer {
     public Customer() {
         this.isValidCpf = false;

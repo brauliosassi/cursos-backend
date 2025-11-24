@@ -1,7 +1,6 @@
 package com.bsassi.hexagonal.config;
 
 import com.bsassi.hexagonal.adapters.out.DeleteCustomerByIdAdapter;
-import com.bsassi.hexagonal.adapters.out.FindCustomerByIdAdapter;
 import com.bsassi.hexagonal.application.core.usecase.DeleteCustomerByIdUseCase;
 import com.bsassi.hexagonal.application.core.usecase.FindCustomerByIdUseCase;
 import org.springframework.context.annotation.Bean;

@@ -1,8 +1,5 @@
 package com.bsassi.hexagonal.application.core.domain;
 
-import lombok.Getter;
-import lombok.Setter;
-
 
 public class Address {
 

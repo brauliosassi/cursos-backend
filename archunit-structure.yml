@@ -1,0 +1,33 @@
+root: com.bsassi.hexagonal
+packages:
+  controller: com.bsassi.hexagonal.adapters.in.controller
+  consumer: com.bsassi.hexagonal.adapters.in.consumer
+  client: com.bsassi.hexagonal.adapters.out.client
+  repository: com.bsassi.hexagonal.adapters.out.repository
+  usecase: com.bsassi.hexagonal.application.core.usecase
+  port:
+    - com.bsassi.hexagonal.application.ports.in
+    - com.bsassi.hexagonal.application.ports.out
+  entity:
+    - com.bsassi.hexagonal.application.core.domain
+    - com.bsassi.hexagonal.adapters.out.repository.entity
+  mapper:
+    - com.bsassi.hexagonal.adapters.in.controller.mapper
+    - com.bsassi.hexagonal.adapters.in.consumer.mapper
+    - com.bsassi.hexagonal.adapters.out.client.mapper
+    - com.bsassi.hexagonal.adapters.out.repository.mapper
+naming:
+  controller: Controller
+  consumer: Consumer
+  client: Client
+  repository: Repository
+  usecase: UseCase
+  port:
+    - InputPort
+    - OutputPort
+  entity: Entity
+  mapper:
+    - Mapper
+modules:
+  - name: hexagonal-service
+    root: com.bsassi.hexagonal
