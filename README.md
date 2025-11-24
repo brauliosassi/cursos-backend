@@ -1,5 +1,7 @@
 # Arquitetura Hexagonal + ArchUnit
 
+![ArchUnit Tests](https://github.com/brauliosassi/cursos-backend/actions/workflows/archunit-tests.yml/badge.svg)  [Visualizar diagrama online](https://brauliosassi.github.io/cursos-backend/architecture-diagram.png)
+
 > Garantindo coerência estrutural e de nomenclatura em um projeto Java seguindo princípios da Arquitetura Hexagonal.
 
 ![Arquitetura](docs/architecture-diagram.png)
